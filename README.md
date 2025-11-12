@@ -6,7 +6,7 @@ It provides modules for:
 - 💬 Question & Answer (Chat)
 - 🌾 Crop Recommendation
 - 🧪 Soil & Fertilizer Advice
-- 💧 Irrigation Guidance
+- 💧 Irrigation Guidance 
 - 🍃 Leaf Disease Detection
 
 ---
