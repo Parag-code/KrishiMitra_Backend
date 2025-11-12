@@ -1,0 +1,8 @@
+flask
+requests
+groq
+torch
+transformers
+pillow
+geopy
+python-dotenv
