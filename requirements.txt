@@ -6,3 +6,4 @@ transformers
 pillow
 geopy
 python-dotenv
+gunicorn
