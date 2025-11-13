@@ -21,10 +21,7 @@ API_KEY = os.getenv("KRISHIMITRA_API_KEY")
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
-CORS(app,
-     resources={r"/*": {"origins": "*"}},
-     supports_credentials=True,
-     allow_headers=["Content-Type", "x-api-key"])
+CORS(app)
 
 
 @app.before_request
@@ -93,5 +90,6 @@ def krishimitra_api():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=False)
+
 
 
