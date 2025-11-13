@@ -33,6 +33,12 @@ def verify_api_key():
         return jsonify({"error": "Unauthorized — invalid or missing API key."}), 401
 
 
+
+@app.route("/health", methods=["GET"])
+def health():
+    return "OK", 200
+
+
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
@@ -90,6 +96,7 @@ def krishimitra_api():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=False)
+
 
 
 
